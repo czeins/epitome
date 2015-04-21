@@ -1,2 +1,15 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<h1>List of Users</h1>
+<p>This page won't exist once we're up and running, but it's here for the time being.</p>
+
+
+<ul>
+<% @users.each do |user| %>
+    <li><%= user.email %></li>
+    <li><%= user.id %></li>
+    <li><%= link_to "edit", edit_user_path(user) %></li>
+    <li><%= link_to "delete", user, method: :delete %></li>
+    <hr>
+    <% end %>
+</ul>
+
+<%= link_to "sign up", signup_path %>

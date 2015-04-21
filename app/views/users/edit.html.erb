@@ -1,2 +1,13 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
+<h1>Edit your profile:</h1>
+
+    <%= form_for @user do |f| %>
+        <%= @user.id %>
+
+            <label for="inputEmail">email</label>
+            <%= f.email_field :email %>
+
+            <label for="inputPW">password</label>
+            <%= f.password_field :password %>
+
+            <button type="submit" class="btn btn-primary">Edit Profile</button>
+    <% end %>

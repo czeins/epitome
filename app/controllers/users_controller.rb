@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
 
+
   def index
     @users = User.all
   end
@@ -9,11 +10,12 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(params)
+    @user = User.new(user_params)
       if @user.save
-        redirect_to beans_path
+        redirect_to users_path
       else
         render "new"
+      end
   end
 
   def show
@@ -21,12 +23,27 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @user = User.find(params[:id])
+  end
 
+  def update
+    @user = User.find(params[:id])
+      if @user.update_attributes(user_params)
+        redirect_to users_path
+      else
+        render "edit"
+      end
+  end
+
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+    redirect_to users_path
   end
 
   private
-  def params
-    params.require(:user).permit(:email, :password, :password_confirmation)
-  end
+    def user_params
+      params.require(:user).permit(:email, :password, :password_confirmation)
+    end
 
 end
