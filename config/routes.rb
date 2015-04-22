@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-    root 'users#index'
+  get 'static/index'
+
+    root 'static#index'
     get 'users' => 'users#index'
     get 'signup' => 'users#new'
     post "/users" => "users#create"
