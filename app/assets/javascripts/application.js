@@ -14,6 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require typekit
-//= require_bootstrap-sockets
-//= require typekit
+//= require bootstrap-sprockets
 //= require_tree .

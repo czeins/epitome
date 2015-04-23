@@ -6,9 +6,11 @@ div.bgMain {
     height: 100vh;
     width: 100vw;
     background: #ffffff image-url('main/bg.jpg') no-repeat center top;
-    background-size: 100%;
-    position: relative;
-    display: table;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
 
 }
 
@@ -18,20 +20,52 @@ div.bgColor {
     background-color: dodgerblue;
     opacity: .8;
     z-index: 1;
-    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-#bgLogline {
+div.bgCenter {
+    position: absolute;
+    z-index: 2;
+    margin: 0;
+    width: 100%;
+    border: 0px solid black;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.bgH1{
     font-family: "jaf-facitweb",sans-serif;
     color: #fff;
-    font-size: 4em;
     text-align: center;
     width: 100%;
     margin: 0;
-    opacity: 1;
-    position: absolute;
-    z-index: 2;
-    vertical-align: middle;
-    line-height: 100vh;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+#bgLogline {
+    font-size: 3em;
+    font-weight: 300;
+}
+
+#bgLogo {
+    font-size: 6em;
+    font-weight: 900;
+    margin: 0 0 20px 0;
+}
+
+div#bgLogin {
+    margin-top: 20px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+div.bgSignin {
+    z-index: 3;
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
