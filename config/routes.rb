@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'static/index'
-
     root 'users#new'
 
     #Will bring you to an index of every user registered
@@ -18,5 +16,6 @@ Rails.application.routes.draw do
     post '/login' => 'sessions#create'
     get '/logout' => 'sessions#destroy'
 
+    get '/welcome' => 'static#welcome'
 
 end

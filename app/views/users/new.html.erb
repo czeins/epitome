@@ -34,18 +34,19 @@
         <h2 id="bgLogline" class="bgH1">Résumés that don't suck.</h2>
         <br>
         <div id="bgLogin">
-            <form class="form-inline">
-              <div class="form-group">
-                <input type="text" class="form-control input-lg" id="exampleInputName2" placeholder="email">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control input-lg" id="exampleInputEmail2" placeholder="password">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control input-lg" id="exampleInputEmail2" placeholder="password">
-              </div>
-              <button type="submit" class="btn btn-default btn-lg">Sign up</button>
-            </form>
+            <%= form_for @user, :html => {class: 'form-inline'} do |f|%>
+                <div class="form-group">
+                  <%= f.email_field :email, class: "form-control input-lg", placeholder: "email"%>
+                </div>
+                <div class="form-group">
+                  <%= f.password_field :password, class: "form-control input-lg", placeholder: "password" %>
+                </div>
+                <div class="form-group">
+                  <%= f.password_field :password_confirm, class: "form-control input-lg", placeholder: "confirm password" %>
+                </div>
+                <button type="submit" class="btn btn-default btn-lg">Sign up</button>
+              <% end %>
+
         </div>
     </div>
 
