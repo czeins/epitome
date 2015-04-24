@@ -1,7 +1,7 @@
 div.welcomeMain {
     height: 100vh;
     width: 100vw;
-    background: #ffffff image-url('main/bg.jpg') no-repeat center top;
+    background: #ffffff image-url('welcome/bg1.jpg') no-repeat center top;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -14,7 +14,7 @@ div.welcomeColor {
     height: 100vh;
     width: 100vw;
     background-color: dodgerblue;
-    opacity: .8;
+    opacity: .2;
     z-index: 1;
     position: absolute;
     top: 0;
@@ -22,10 +22,10 @@ div.welcomeColor {
 }
 
 div.welcomeCenter {
-    position: absolute;
+    position: relative;
     z-index: 2;
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
     border: 0px solid black;
     top: 50%;
     -webkit-transform: translate(0, -50%);
@@ -46,8 +46,8 @@ div.welcomeCenter {
     font-weight: 300;
 }
 
-#welcomeLogo {
-    font-size: 6em;
+#welcomeH1 {
+    font-size: 4em;
     font-weight: 900;
     margin: 0 0 20px 0;
 }
@@ -64,4 +64,13 @@ div.welcomeSignin {
     position: absolute;
     right: 20px;
     top: 20px;
+}
+
+.bulletin {
+    background-color: dodgerblue;
+    padding: 30px;
+    border-radius: 20px;
+    color: dodgerblue;
+    border: 3px solid #fff;
+    margin: 30px 0 0;
 }

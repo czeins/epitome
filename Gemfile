@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby 2.2.1
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -20,6 +20,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use Adobe Typekit
 gem 'typekit-rails'
+
+gem 'rails_12factor', group: :production
 
 
 # Use jquery as the JavaScript library
