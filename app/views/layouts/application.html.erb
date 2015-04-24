@@ -9,6 +9,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<% if current_user %>
+Currently logged in as <%= current_user.email %> <%= link_to "logout", logout_path %>
+<% else %>
+Logged out, mofo
+<% end %>
+
+
+
+
 
 <%= yield %>
 

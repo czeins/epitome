@@ -6,4 +6,12 @@ module ApplicationHelper
       javascript_tag("try{Typekit.load()}catch(e){}")
     end
 
+    def current_user
+        @current_user ||= User.find(session[:user_id]) if session[:user_id]
+    end
+
+    def authorize
+        redirect_to '/login' unless current_user
+    end
+
 end
