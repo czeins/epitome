@@ -1,0 +1,59 @@
+<h1>Resumes#new</h1>
+<p>Let's great a new resume! Hopefully this works!</p>
+
+
+<%= form for @resume do |f| %>
+<%= f.label :education_1 %>:
+  <%= f.text_field :education_1 %><br />
+
+  <%= f.label :education_1_school %>:
+  <%= f.text_field :education_1_school %><br />
+
+  <%= f.label :education_1_degree %>:
+  <%= f.text_field :education_1_degree %><br />
+
+  <%= f.label :education_1_major %>:
+  <%= f.text_field :education_1_major %><br />
+
+  <%= f.label :education_1_minor %>:
+  <%= f.text_field :education_1_minor %><br />
+
+  <%= f.label :education_1_duration %>:
+  <%= f.text_field :education_1_duration %><br />
+
+  <%= f.text_field :education_2 %><br />
+
+  <%= f.label :education_2_school %>:
+  <%= f.text_field :education_2_school %><br />
+
+  <%= f.label :education_2_degree %>:
+  <%= f.text_field :education_2_degree %><br />
+
+  <%= f.label :education_2_major %>:
+  <%= f.text_field :education_2_major %><br />
+
+  <%= f.label :education_2_minor %>:
+  <%= f.text_field :education_2_minor %><br />
+
+    <%= f.label :education_2_duration %>:
+  <%= f.text_field :education_2_duration %><br />
+
+    <%= f.text_field :education_3 %><br />
+
+  <%= f.label :education_3_school %>:
+  <%= f.text_field :education_3_school %><br />
+
+  <%= f.label :education_3_degree %>:
+  <%= f.text_field :education_3_degree %><br />
+
+  <%= f.label :education_3_major %>:
+  <%= f.text_field :education_3_major %><br />
+
+  <%= f.label :education_3_minor %>:
+  <%= f.text_field :education_3_minor %><br />
+
+    <%= f.label :education_3_duration %>:
+  <%= f.text_field :education_3_duration %><br />
+
+  <%= f.submit %>
+  <% end %>

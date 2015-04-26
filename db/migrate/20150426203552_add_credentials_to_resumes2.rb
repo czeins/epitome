@@ -1,0 +1,40 @@
+class AddCredentialsToResumes2 < ActiveRecord::Migration
+  def change
+       add_column :resumes, :education_1_school, :string
+       add_column :resumes, :education_1_degree, :string
+       add_column :resumes, :education_1_major, :string
+       add_column :resumes, :education_1_minor, :string
+       add_column :resumes, :education_1_duration, :string
+       add_column :resumes, :education_2, :string
+       add_column :resumes, :education_2_degree, :string
+       add_column :resumes, :education_2_major, :string
+       add_column :resumes, :education_2_minor, :string
+       add_column :resumes, :education_2_duration, :string
+       add_column :resumes, :education_3, :string
+       add_column :resumes, :education_3_degree, :string
+       add_column :resumes, :education_3_major, :string
+       add_column :resumes, :education_3_minor, :string
+       add_column :resumes, :education_3_duration, :string
+       add_column :resumes, :experience_1, :string
+       add_column :resumes, :experience_1_position, :string
+       add_column :resumes, :experience_1_duration, :string
+       add_column :resumes, :experience_1_description, :text
+       add_column :resumes, :experience_2, :string
+       add_column :resumes, :experience_2_position, :string
+       add_column :resumes, :experience_2_duration, :string
+       add_column :resumes, :experience_2_description, :text
+       add_column :resumes, :experience_3, :string
+       add_column :resumes, :experience_3_position, :string
+       add_column :resumes, :experience_3_duration, :string
+       add_column :resumes, :experience_3_description, :text
+       add_column :resumes, :experience_4, :string
+       add_column :resumes, :experience_4_position, :string
+       add_column :resumes, :experience_4_duration, :string
+       add_column :resumes, :experience_4_description, :text
+       add_column :resumes, :skills_description, :text
+       remove_column :resumes, :user, :string
+       remove_column :resumes, :education, :string
+       remove_column :resumes, :jobs, :string
+       remove_column :resumes, :skills, :string
+  end
+end
