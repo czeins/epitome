@@ -8,7 +8,7 @@
         <li><%= user.email %></li>
         <li><%= user.id %></li>
         <li><%= link_to "edit", edit_user_path(user) %></li>
-        <li><%= link_to "delete", user, method: :delete %></li>
+        <li><%= link_to "delete user", user, method: :destroy %></li>
         <li><%= link_to "resumes", user_resumes_path(user) %></li>
         <hr>
     <% end %>

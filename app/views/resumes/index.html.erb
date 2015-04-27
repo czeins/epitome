@@ -6,6 +6,7 @@
         <li><%= r.education_1 %></li>
         <li><%= r.education_1_degree %></li>
         <li><%= link_to "edit", edit_user_resume_path(current_user, r) %></li>
+        <li><%= link_to "delete this resume", user_resume_path(current_user, r), method: :delete %></li>
  <!--        method: :delete %></li> -->
         <hr>
     <% end %>
