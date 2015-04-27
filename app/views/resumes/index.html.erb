@@ -1,2 +1,14 @@
 <h1>Resumes#index</h1>
 <p>Find me in app/views/resumes/index.html.erb</p>
+
+<ul>
+    <% @resumes.each do |r| %>
+        <li><%= r.education_1 %></li>
+        <li><%= r.education_1_degree %></li>
+        <li><%= link_to "edit", edit_user_resume_path(current_user, r) %></li>
+ <!--        method: :delete %></li> -->
+        <hr>
+    <% end %>
+</ul>
+
+<%= link_to "sign up", signup_path %>

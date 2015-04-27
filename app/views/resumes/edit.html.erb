@@ -1,2 +1,103 @@
-<h1>Resumes#edit</h1>
+<h1>Edit a page</h1>
 <p>Find me in app/views/resumes/edit.html.erb</p>
+
+<%= form_for [@user, @resume] do |f| %>
+
+<%= f.label :education_1 %>:
+  <%= f.text_field :education_1 %><br />
+
+  <%= f.label :education_1_degree %>:
+  <%= f.text_field :education_1_degree %><br />
+
+  <%= f.label :education_1_major %>:
+  <%= f.text_field :education_1_major %><br />
+
+  <%= f.label :education_1_minor %>:
+  <%= f.text_field :education_1_minor %><br />
+
+  <%= f.label :education_1_duration %>:
+  <%= f.text_field :education_1_duration %><br />
+
+<%= f.label :education_2 %>:
+  <%= f.text_field :education_2 %><br />
+
+  <%= f.label :education_2_degree %>:
+  <%= f.text_field :education_2_degree %><br />
+
+  <%= f.label :education_2_major %>:
+  <%= f.text_field :education_2_major %><br />
+
+  <%= f.label :education_2_minor %>:
+  <%= f.text_field :education_2_minor %><br />
+
+    <%= f.label :education_2_duration %>:
+  <%= f.text_field :education_2_duration %><br />
+
+<%= f.label :education_3 %>:
+    <%= f.text_field :education_3 %><br />
+
+  <%= f.label :education_3_degree %>:
+  <%= f.text_field :education_3_degree %><br />
+
+  <%= f.label :education_3_major %>:
+  <%= f.text_field :education_3_major %><br />
+
+  <%= f.label :education_3_minor %>:
+  <%= f.text_field :education_3_minor %><br />
+
+    <%= f.label :education_3_duration %>:
+  <%= f.text_field :education_3_duration %><br />
+
+<%= f.label :experience_1 %>:
+    <%= f.text_field :experience_1 %><br />
+
+  <%= f.label :experience_1_position %>:
+  <%= f.text_field :experience_1_position %><br />
+
+  <%= f.label :experience_1_duration %>:
+  <%= f.text_field :experience_1_duration %><br />
+
+  <%= f.label :experience_1_description %>:
+  <%= f.text_area :experience_1_description %><br />
+
+<%= f.label :experience_2 %>:
+    <%= f.text_field :experience_2 %><br />
+
+  <%= f.label :experience_2_position %>:
+  <%= f.text_field :experience_2_position %><br />
+
+  <%= f.label :experience_2_duration %>:
+  <%= f.text_field :experience_2_duration %><br />
+
+  <%= f.label :experience_2_description %>:
+  <%= f.text_area :experience_2_description %><br />
+
+  <%= f.label :experience_3 %>:
+    <%= f.text_field :experience_3 %><br />
+
+  <%= f.label :experience_3_position %>:
+  <%= f.text_field :experience_3_position %><br />
+
+  <%= f.label :experience_3_duration %>:
+  <%= f.text_field :experience_3_duration %><br />
+
+  <%= f.label :experience_3_description %>:
+  <%= f.text_area :experience_3_description %><br />
+
+<%= f.label :experience_4 %>:
+    <%= f.text_field :experience_4 %><br />
+
+  <%= f.label :experience_4_position %>:
+  <%= f.text_field :experience_4_position %><br />
+
+  <%= f.label :experience_4_duration %>:
+  <%= f.text_field :experience_4_duration %><br />
+
+  <%= f.label :experience_4_description %>:
+  <%= f.text_area :experience_4_description %><br />
+
+  <%= f.label :skills_description %>:
+  <%= f.text_area :skills_description %><br />
+
+  <%= f.submit "Edit" %>
+  <% end %>
